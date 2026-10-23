@@ -3,3 +3,5 @@
 *.bin
 *.map
 *.d
+arm-trusted-firmware/
+u-boot/
