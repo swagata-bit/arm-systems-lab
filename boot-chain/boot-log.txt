@@ -1,0 +1,52 @@
+NOTICE:  Booting Trusted Firmware
+NOTICE:  BL1: v2.15.0(release):v2.15.0-1058-g510355478
+NOTICE:  BL1: Built : 12:26:34, Oct 16 2026
+NOTICE:  BL1: Booting BL2
+NOTICE:  BL2: v2.15.0(release):v2.15.0-1058-g510355478
+NOTICE:  BL2: Built : 12:26:38, Oct 16 2026
+NOTICE:  BL1: Booting BL31
+NOTICE:  BL31: v2.15.0(release):v2.15.0-1058-g510355478
+NOTICE:  BL31: Built : 12:26:40, Oct 16 2026
+
+
+U-Boot 2026.10-00636-g8d7bc8add17b (Oct 16 2026 - 12:23:32 +0000)
+
+DRAM:  1 GiB
+using memory 0x7e44d000-0x7f48d000 for malloc()
+Core:  51 devices, 14 uclasses, devicetree: board
+Flash: 32 MiB
+Loading Environment from Flash...*** Warning - bad CRC, using default environment
+
+In:    serial,usbkbd
+Out:   serial,vidconsole
+Err:   serial,vidconsole
+No USB controllers found
+Net:   eth0: virtio-net#32
+[?25h
+[2KHit any key to stop autoboot: 2[2KHit any key to stop autoboot: 1[2KHit any key to stop autoboot: 0
+Scanning for bootflows in all bootdevs
+Seq  Method       State   Uclass    Part  Name                      Filename
+---  -----------  ------  --------  ----  ------------------------  ----------------
+Scanning global bootmeth 'efi_mgr':
+7[r[999;999H[6n8Cannot persist EFI variables without system partition
+Missing TPMv2 device for EFI_TCG_PROTOCOL
+Missing RNG device for EFI_RNG_PROTOCOL
+Scanning bootdev 'fw-cfg@9020000.bootdev':
+fatal: no kernel available
+scanning bus for devices...
+Scanning bootdev 'virtio-net#32.bootdev':
+BOOTP broadcast 1
+DHCP client bound to address 10.0.2.15 (2 ms)
+*** Warning: no boot file name; using '0A00020F.img'
+Using virtio-net#32 device
+TFTP from server 10.0.2.2; our IP address is 10.0.2.15
+Filename '0A00020F.img'.
+Load address: 0x40400000
+Loading: *
+TFTP error: 'Access violation' (2)
+Not retrying...
+No more bootdevs
+---  -----------  ------  --------  ----  ------------------------  ----------------
+(0 bootflows, 0 valid)
+=> QEMU: Terminated
+
